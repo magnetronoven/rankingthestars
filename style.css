@@ -1,0 +1,14 @@
+/* main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(107deg, rgba(244,205,151,1) 0%, rgba(155,255,249,1) 23%, rgba(166,252,146,1) 46%, rgba(244,229,151,1) 70%, rgba(244,160,151,1) 100%);
+    color: #303030;
+    background-size: 10000px;
+    animation: backgroundanimation 50s infinite linear;
+}

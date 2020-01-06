@@ -1,0 +1,74 @@
+.ranking .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.headtext {
+    margin-top: 100px;
+    height: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: -1px 1px 2px #717171;
+}
+
+.player {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    background: gray;
+    border-radius: 50px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 3px 4px 0px #00000029;
+}
+
+.player:first-child {
+    margin-top: 0;
+}
+
+.player i {
+    color: yellow;
+    font-size: x-large;
+}
+
+.player span {
+    padding-left: 30px;
+    line-height: 23px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.player.good {
+    background: linear-gradient(153deg, rgba(116,255,39,1) 0%, rgba(0,254,255,1) 100%);
+}
+
+.player.good i {
+    color: white;
+}
+
+.player.good span {
+    color: white;
+}
+
+@keyframes backgroundanimation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+}

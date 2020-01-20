@@ -5,55 +5,21 @@
     grid-gap: 100px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.player-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.headtext {
-    margin-top: 100px;
-    height: 50px;
-    padding-left: 50px;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    text-shadow: -1px 1px 2px #717171;
-}
-
 .player {
     display: flex;
     width: 100%;
     margin-top: 20px;
     background: gray;
     border-radius: 50px;
-    background: white;
+    background: linear-gradient(107deg, rgba(255,255,255,1) 30%, rgba(116,255,39,1) 64%, rgba(0,254,255,1) 100%);
+    background-size: 1750px 1px;
     padding: 15px;
     box-shadow: 0px 3px 4px 0px #00000029;
-}
-
-.player:first-child {
-    margin-top: 0;
-}
-
-.player i {
-    color: yellow;
-    font-size: x-large;
-}
-
-.player span {
-    padding-left: 30px;
-    line-height: 23px;
-    font-weight: bold;
-    font-size: 20px;
+    transition: 500ms all;
 }
 
 .player.good {
-    background: linear-gradient(153deg, rgba(116,255,39,1) 0%, rgba(0,254,255,1) 100%);
+    background-position-x: -1100px;
 }
 
 .player.good i {
@@ -64,11 +30,3 @@
     color: white;
 }
 
-@keyframes backgroundanimation {
-    0% {
-        background-position: 0%;
-    }
-    50% {
-        background-position: 100%;
-    }
-}

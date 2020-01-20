@@ -4,30 +4,30 @@
             "questions": {
                 "Wie doet er mee met expeditie robinson?": {
                     "answers": {
-                        "playerone": {
-                            "playertwo": 1,
-                            "playerthree": 2,
-                            "playerone": 3,
-                            "playerfour": 4
-                        },
-                        "playertwo": {
-                            "playerfour": 1,
-                            "playerthree": 2,
-                            "playertwo": 3,
-                            "playerone": 4
-                        },
-                        "playerthree": {
-                            "playerthree": 1,
-                            "playertwo": 2,
-                            "playerone": 3,
-                            "playerfour": 4
-                        },
-                        "playerfour": {
-                            "playerfour": 1,
-                            "playerthree": 2,
-                            "playerone": 3,
-                            "playertwo": 4
-                        }
+                        "playerone": [
+                            "playerfour",
+                            "playertwo",
+                            "playerone",
+                            "playerthree"
+                        ],
+                        "playertwo": [
+                            "playertwo",
+                            "playerone",
+                            "playerfour",
+                            "playerthree"
+                        ],
+                        "playerthree": [
+                            "playerthree",
+                            "playertwo",
+                            "playerone",
+                            "playerfour"
+                        ],
+                        "playerfour": [
+                            "playerone",
+                            "playertwo",
+                            "playerthree",
+                            "playerfour"
+                        ]
                     },
                     "playing": "playerone"
                 }

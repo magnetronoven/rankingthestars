@@ -1,11 +1,11 @@
 const fs = require("fs")
 
-module.exports = (pageName, data = {}) => {
+module.exports = async (pageName, data = {}) => {
     const app = document.getElementById("app")
     const newPageContent = fs.readFileSync("./pages/" + pageName + "/index.html",'utf8')
 
     app.innerHTML = ""
     app.innerHTML = newPageContent
     
-    require("./pages/" + pageName + "/index.js")(data)
+    return await require("./pages/" + pageName + "/index.js")(data)
 }
